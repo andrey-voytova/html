@@ -1,0 +1,98 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+h2{
+    font-size: 30px;
+    line-height: 36px;
+    color: #222222;
+    }
+    p{
+        font-size: 14px;
+        line-height: 17px;
+        color: #9F9F9F;
+    }
+a{
+    text-decoration: none;
+}
+.center{
+    padding-left: calc(50% - 570px);
+    padding-right: calc(50% - 570px);
+}
+.header{
+    background-color: #222;
+    height: 75px;
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    &_ok{
+        padding-right: 41px;
+    }
+    &_local{
+        padding-left: 34px;
+        padding-right: 34px;
+    }
+}
+.theBrand{
+    display: flex;
+    
+    &_man{
+        width: 50%;
+    }
+    &_img{
+        width: 100%;
+    }
+    &_brand{
+        background: #F1E4E6;
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        padding-left: 64px;
+        justify-content: center;
+    }
+}
+.items{
+    padding-top: 64px;
+    &_hot{
+        display: flex;
+        justify-content: space-between;
+    }
+    &_img:not(:last-child){
+        padding-right: 30px;
+    }
+    &_img{
+        position: relative;
+    }
+    &_src{
+        width: 100%;
+    }
+    &_textSrc{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-size: 16px;
+        line-height: 19px;
+        color: #FFFFFF;
+    }
+    
+    &_pink{
+        color: #F16D7F;
+        font-size: 22px;
+    }
+    &_trendy{   
+        width: 100%;
+        padding-top: 30px;
+        justify-content: center;
+    }
+    &_src2{
+        width: 100%;
+    }
+   
+    
+}
