@@ -1,3 +1,4 @@
+$colorSelect: #F16D7F;
 *{
     margin: 0;
     padding: 0;
@@ -11,7 +12,7 @@ summary::-webkit-details-marker {
     background-color: #FFFFFF;
 }
 .fa:hover{
-    background: #F16D7F;
+    background: $colorSelect;
     color: #FFFFFF;
 }
 h2{
@@ -25,6 +26,7 @@ p{
         color: #9F9F9F;
     }
 a{
+    color: #000;
     text-decoration: none;
 }
 .center{
@@ -94,7 +96,7 @@ a{
     }
     
     &_pink{
-        color: #F16D7F;
+        color: $colorSelect;
         font-size: 22px;
     }
     &_trendy{   
@@ -114,6 +116,9 @@ a{
         margin-top: 48px;
         flex-wrap: wrap;
         justify-content: space-between;
+    }
+    &_price{
+        color: $colorSelect;
     }
     &_mb{
         margin-bottom: 30px;
@@ -178,7 +183,7 @@ a{
         color: #F26376;
     }
     &_button:hover{
-        background: #F16D7F;
+        background: $colorSelect;
     }
     &_browse:hover{
         color: #fff;
@@ -195,6 +200,7 @@ a{
         width:40px ;
     }
     &_content{
+        color: #FBFBFB;
         width: 360px;
         display: flex;
         flex-direction: column;
@@ -264,7 +270,7 @@ a{
         border: 0;
     }
     &_button{
-        background: #F16D7F;
+        background: $colorSelect;
         padding: 14px;
         border-top-right-radius: 50px;
         border-bottom-right-radius: 50px;
@@ -300,7 +306,7 @@ a{
         display: flex;
     }
     &_h2{
-        color: #F16D7F;
+        color: $colorSelect;
         font-size: 24px;
         line-height: 29px;
     }
@@ -315,13 +321,13 @@ a{
         padding-right: 8px;
     }
     &_link:hover{
-        color: #F16D7F;
+        color: $colorSelect;
     }
 }
 .sort{
+        padding-top: 51px;
+        padding-bottom: 65px;
         display: flex;
-        padding-top: 39px;
-        padding-bottom: 16px;
         position: relative;
     &__text{
         font-weight: 600;
@@ -331,7 +337,6 @@ a{
     }
     &__filter{
         position: absolute;
-        padding-top: 16px;
         padding-left: 16px;
     }
     &__filter_active:hover{
@@ -377,15 +382,95 @@ a{
     
 }
 .catalog{
+     &__card{
         display: flex;
         justify-content: space-between;
         flex-wrap: wrap;
+    }   
     &__page{
+        margin-bottom: 109px;
+        margin-top: 60px;
         font-weight: 300;
         font-size: 16px;
         line-height: 19px;
-        color: #636363;
-        border: 1px solid;
-        margin: 0 auto;
+        border: 1px solid #EBEBEB;
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 19px;
+        width: 202px;
     }
+    &__ul{
+        display: flex;
+        list-style-type: none;
+        justify-content: center;
+        padding: 11px 41px;
+    }   
+    &__li:not(:last-child){
+        padding-right: 5px;
+    }
+    &__center{
+        display: flex;
+        justify-content: center;
+    }
+}
+.collection{
+    display: flex;
+    justify-content: center;
+    background: #F7F7F7;
+    position: relative;
+    &__price{ 
+        border: 1px solid #eaeaea;
+        background-color: #fff;
+        width: 550px;
+        margin: 0 auto;
+        padding-top:64px ;
+        padding-bottom: 64px;
+        text-align: center;
+        margin-top: -65px;
+        position: relative;
+    }
+    &__h2{
+        font-size: 14px;
+        line-height: 17px;
+        color: #F16D7F;
+        padding-bottom: 12px;
+    }
+    &__border{
+        width: 63px;
+        height: 3px;
+        background: #EF5B70;
+        margin:0 auto;
+        margin-bottom: 12px;
+    }
+    &__h3{
+        font-size: 18px;
+        line-height: 22px;
+        color: #4D4D4D;
+        padding-bottom: 48px;
+    }
+    &__p{
+        width: 555px;
+        font-size: 14px;
+        line-height: 17px;
+        color: #5E5E5E;
+        margin: 0 auto;
+        padding-bottom: 32px;
+        
+    }
+    &__op{
+        border: 1px solid #EAEAEA;
+        margin-bottom: 65px;
+        margin-top:65px ;
+    }
+    &__choose{
+        display: flex;
+        justify-content: space-around;
+    }
+
+}
+.product-card{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 129px;
+    margin-bottom: 129px;
 }
