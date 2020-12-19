@@ -605,7 +605,7 @@ a {
           justify-content: center;
 }
 
-.collection {
+.product-photo {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -616,11 +616,19 @@ a {
   position: relative;
 }
 
-.collection__price {
+.collection {
+  position: relative;
   border: 1px solid #eaeaea;
   background-color: #fff;
   width: 550px;
   margin: 0 auto;
+  margin-top: -65px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.collection__price {
   padding-top: 64px;
   padding-bottom: 64px;
   text-align: center;
@@ -669,8 +677,17 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.collection__open:not(:last-child) {
+  padding-right: 22px;
+}
+
+.collection_carz {
+  color: #F16D7F;
 }
 
 .product-card {
