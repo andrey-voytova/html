@@ -191,6 +191,15 @@ a {
   position: relative;
   width: 360px;
   background: #F8F8F8;
+  -webkit-transition: -webkit-transform 3s;
+  transition: -webkit-transform 3s;
+  transition: transform 3s;
+  transition: transform 3s, -webkit-transform 3s;
+}
+
+.fetured_card:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 .fetured_card:hover .fetured_img {
@@ -235,6 +244,10 @@ a {
       -ms-flex-pack: center;
           justify-content: center;
   display: none;
+  -webkit-transition: -webkit-box-shadow 0.7s;
+  transition: -webkit-box-shadow 0.7s;
+  transition: box-shadow 0.7s;
+  transition: box-shadow 0.7s, -webkit-box-shadow 0.7s;
 }
 
 .fetured_add:hover {
@@ -257,6 +270,8 @@ a {
   border: 1px solid #FF6A6A;
   width: 210px;
   margin: 0 auto;
+  -webkit-transition: background-color 0.5s;
+  transition: background-color 0.5s;
 }
 
 .fetured_browse {
@@ -264,6 +279,8 @@ a {
   font-size: 16px;
   line-height: 19px;
   color: #F26376;
+  -webkit-transition: color 0.5s;
+  transition: color 0.5s;
 }
 
 .fetured_button:hover {

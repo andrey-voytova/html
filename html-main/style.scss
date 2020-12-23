@@ -1,4 +1,4 @@
-$colorSelect: #F16D7F;
+@import './variables.scss';
 *{
     margin: 0;
     padding: 0;
@@ -131,6 +131,10 @@ a{
         position: relative;
         width: 360px;
         background: #F8F8F8;
+        transition: transform 3s;
+        &:hover{
+            transform: scale(1.1);
+        }
     }
     &_card:hover .fetured_img{
         filter: brightness(50%);
@@ -161,6 +165,8 @@ a{
         align-items: center;
         justify-content: center;
         display: none;
+        transition: box-shadow 0.7s;
+
     }
     &_add:hover{
         box-shadow: 0 0 5px #fff;  
@@ -175,12 +181,16 @@ a{
         border: 1px solid #FF6A6A;
         width: 210px;
         margin: 0 auto;
+        transition: background-color 0.5s;
+
     }
     &_browse{
         padding: 14px 38px;
         font-size: 16px;
         line-height: 19px;
         color: #F26376;
+        transition: color 0.5s;
+
     }
     &_button:hover{
         background: $colorSelect;
@@ -296,33 +306,5 @@ a{
         color: #FBFBFB;
     }
 }
-.arrivals{
-    background: #F8F3F4;
-    height: 150px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    &_home{
-        display: flex;
-    }
-    &_h2{
-        color: $colorSelect;
-        font-size: 24px;
-        line-height: 29px;
-    }
-    &_link{
-        font-size: 14px;
-        line-height: 17px;
-        color: #636363;
-    }
-    &_link:not(:last-child)::after{
-        content: "/";
-        padding-left: 8px;
-        padding-right: 8px;
-    }
-    &_link:hover{
-        color: $colorSelect;
-    }
-}
-@import "catalog.scss";
-@import "product.scss";
+@import './catalog.html';
+@import './product.scss';
