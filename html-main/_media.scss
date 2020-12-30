@@ -1,0 +1,58 @@
+@media (max-width: 768px){
+    .header{
+        &_left{
+            padding-left:32px;
+        }
+        &_right{
+            padding-right: 41px;
+        }
+    }    
+    .items {
+        padding: 19px 16px;
+        &_img:not(:last-child) {
+            padding-right: 20px;
+        }
+        &_trendy{
+            padding-top:19px;
+        }
+    }  
+    .fetured{
+        &_text {
+            text-align: center;
+            padding-top: 135px;
+            font-size: 30px;
+            line-height: 36px;
+            color: #222222; 
+        }
+        &_catalog{
+            margin-top: 56px;
+        }
+    }
+    .overfooter{
+        flex-direction: column;
+        height: 610px;
+        justify-content: space-evenly;
+    }
+    .footer_content{
+    justify-content: space-evenly;
+    flex-direction: column;
+    height: 610px;
+    }
+    .center {
+        padding-left: calc(50% - 369px);
+        padding-right: calc(50% - 369px);
+    }
+    .catalog__card :nth-child(9){ 
+        display: none;
+    }
+    .collection {
+      padding-top: 64px;
+      margin-top: 0;
+      width: 100%;
+      justify-content: center;
+    }
+   .card3{
+       display: none;
+   }
+    
+}

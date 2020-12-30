@@ -1,0 +1,73 @@
+.product-photo{
+    display: flex;
+    justify-content: center;
+    background: #F7F7F7;
+    position: relative;
+}
+.collection{
+    position: relative;
+    border: 1px solid #eaeaea;
+    background-color: #fff;
+    width: 550px;
+    margin: 0 auto;
+    margin-top: -65px;
+    display: flex;
+    &__price{ 
+        padding-top:64px ;
+        padding-bottom: 64px;
+        text-align: center;
+        margin-top: -65px;
+        position: relative;
+    }
+    &__h2{
+        font-size: 14px;
+        line-height: 17px;
+        color: #F16D7F;
+        padding-bottom: 12px;
+    }
+    &__border{
+        width: 63px;
+        height: 3px;
+        background: #EF5B70;
+        margin:0 auto;
+        margin-bottom: 12px;
+    }
+    &__h3{
+        font-size: 18px;
+        line-height: 22px;
+        color: #4D4D4D;
+        padding-bottom: 48px;
+    }
+    &__p{
+        width: 555px;
+        font-size: 14px;
+        line-height: 17px;
+        color: #5E5E5E;
+        margin: 0 auto;
+        padding-bottom: 32px;
+        
+    }
+    &__op{
+        border: 1px solid #EAEAEA;
+        margin-bottom: 65px;
+        margin-top:65px ;
+    }
+    &__choose{
+        display: flex;
+        justify-content: center;
+    }
+    &__open:not(:last-child){
+        padding-right: 22px;
+    }
+    &_carz{
+            color: $colorSelect;
+    }
+
+}
+.product-card{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 129px;
+    margin-bottom: 129px;
+}
