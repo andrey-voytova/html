@@ -711,10 +711,95 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
   margin-top: 129px;
   margin-bottom: 129px;
+}
+
+.shopping-card {
+  height: 148px;
+  background: #F8F3F4;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.shopping-card__h2 {
+  font-size: 24px;
+  line-height: 29px;
+  color: #F16D7F;
+}
+
+@media (max-width: 768px) {
+  .header_left {
+    padding-left: 32px;
+  }
+  .header_right {
+    padding-right: 41px;
+  }
+  .items {
+    padding: 19px 16px;
+  }
+  .items_img:not(:last-child) {
+    padding-right: 20px;
+  }
+  .items_trendy {
+    padding-top: 19px;
+  }
+  .fetured_text {
+    text-align: center;
+    padding-top: 135px;
+    font-size: 30px;
+    line-height: 36px;
+    color: #222222;
+  }
+  .fetured_catalog {
+    margin-top: 56px;
+  }
+  .overfooter {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: 610px;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+  .footer_content {
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: 610px;
+  }
+  .center {
+    padding-left: calc(50% - 369px);
+    padding-right: calc(50% - 369px);
+  }
+  .catalog__card :nth-child(9) {
+    display: none;
+  }
+  .collection {
+    padding-top: 64px;
+    margin-top: 0;
+    width: 100%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .card3 {
+    display: none;
+  }
 }
 /*# sourceMappingURL=style.css.map */

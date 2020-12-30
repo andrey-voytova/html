@@ -1,5 +1,5 @@
-@import './variables.scss';
-*{
+@import "variables";
+* {
     margin: 0;
     padding: 0;
 }
@@ -306,5 +306,7 @@ a{
         color: #FBFBFB;
     }
 }
-@import './catalog.html';
-@import './product.scss';
+@import "catalog";
+@import "product";
+@import "shopping_card";
+@import "media";
